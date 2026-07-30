@@ -2,7 +2,7 @@
 
 ## KLayout technology files for GT2n nanosheet educational process
 
-Most of the files comes for the offcial GT2N site : https://github.com/azadnaeemi/GT2N
+Most of the files comes for the official GT2N site : https://github.com/azadnaeemi/GT2N
 
 The GT2n process is also a platform of the OpenROAD-flow-scripts
 
@@ -17,7 +17,7 @@ To install it, copy the file **GT2n.lyp**, **GT2n.lyt** and the 3 directories **
 `$HOME/.klayout/tech/GT2n  (under Linux)`  
 `#HOMEDATA#/klayout/tech/GT2n  (under Windows)`  
 
-Within KLayout, you can then access the technolgy **GT2n** by the menu : **[Tools]-[Manage Technologies]** 
+Within KLayout, you can then access the technology **GT2n** by the menu : **[Tools]-[Manage Technologies]** 
 
 A 2.5D view of the cell **gt2_6t_nand2_x1_w13_svt**
 ![Markdown Logo](gt2_6t_nand2_x1_w13_svt.png)
