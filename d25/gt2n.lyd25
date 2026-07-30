@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<klayout-macro>
+ <description>D25 view</description>
+ <version/>
+ <category>d25</category>
+ <prolog/>
+ <epilog/>
+ <doc/>
+ <autorun>false</autorun>
+ <autorun-early>false</autorun-early>
+ <priority>0</priority>
+ <shortcut/>
+ <show-in-menu>true</show-in-menu>
+ <group-name>sky130a</group-name>
+ <menu-path>tools_menu.sky130a&gt;lvs("Sky130A").end</menu-path>
+ <interpreter>dsl</interpreter>
+ <dsl-interpreter-name>d25-dsl-xml</dsl-interpreter-name>
+ <text># Stack definition
+bpr    = input(8, 0)
+z(bpr, zstart: -0.180, zstop: -0.090, name: "BPR", like: "8/0")
+vbpr   = input(9, 0)
+z(vbpr,  zstart: -0.090, zstop: 0.0, name: "VBPR", like: "9/0")
+act    = input(2, 0)
+nsel   = input(6, 0)
+psel   = input(7, 0)
+actn   = act.and(nsel)
+actp   = act.and(psel)
+z(actn,  zstart: 0.013, zstop: 0.018, name: "ACTN", like: "6/0")
+z(actn,  zstart: 0.030, zstop: 0.035, name: "ACTN", like: "6/0")
+z(actn,  zstart: 0.047, zstop: 0.052, name: "ACTN", like: "6/0")
+z(actp,  zstart: 0.013, zstop: 0.018, name: "ACTP", color: 0xcccc66)
+z(actp,  zstart: 0.030, zstop: 0.035, name: "ACTP", color: 0xcccc66)
+z(actp,  zstart: 0.047, zstop: 0.052, name: "ACTP", color: 0xcccc66)
+gate_drawing   = input(3, 0)
+dummy  = input(4, 0)
+gate_lbl  = input(3, 20)
+gcut   = input(5, 0)
+gate = gate_drawing.not(gcut).not(dummy)
+z(gate,  zstart: 0.0, zstop: 0.065, name: "GATE", like: "3/0")
+z(dummy,  zstart: 0.0, zstop: 0.065, name: "GATE_DUMMY", like: "3/20")
+sdcon  = input(10, 0)
+sdconn = sdcon.and(nsel)
+sdconp = sdcon.and(psel)
+z(sdconn, zstart: 0.0, height: 0.089, name: "SDCON", color: 0xff00ff)
+z(sdconp, zstart: 0.0, height: 0.089, name: "SDCOP", color: 0xff66cc)
+vsd    = input(11, 0)
+z(vsd, zstart: 0.089, height: 0.023, name: "VSD", like: "11/0")
+vg     = input(12, 0)
+z(vg, zstart: 0.065, height: 0.047, name: "VG", like: "12/0")
+m0     = input(20, 0)
+z(m0, height: 0.024, name: "M0", like: "20/0")
+v0     = input(22, 0)
+z(v0, height: 0.048, name: "V0", like: "22/0")
+m1     = input(25, 0)
+z(m1, height: 0.028, name: "M1", like: "25/0")
+v1     = input(27, 0)
+z(v1, height: 0.056, name: "V1", like: "27/0")
+m2     = input(30, 0)
+z(m2, height: 0.024, name: "M2", like: "30/0")
+v2     = input(32, 0)
+z(v2, height: 0.048, name: "V2", like: "32/0")
+m3     = input(35, 0)
+z(m3, height: 0.028, name: "M3", like: "35/0")
+v3     = input(37, 0)
+z(v3, height: 0.056, name: "V3", like: "37/0")
+m4     = input(40, 0)
+z(m4, height: 0.042, name: "M4", like: "40/0")
+v4     = input(42, 0)
+z(v4, height: 0.084, name: "V4", like: "42/0")
+m5     = input(45, 0)
+z(m5, height: 0.042, name: "M5", like: "45/0")
+v5     = input(47, 0)
+z(v5, height: 0.084, name: "V5", like: "47/0")
+m6     = input(50, 0)
+z(m6, height: 0.076, name: "M6", like: "50/0")
+v6     = input(52, 0)
+z(v6, height: 0.152, name: "V6", like: "52/0")
+m7     = input(55, 0)
+z(m7, height: 0.076, name: "M7", like: "55/0")
+v7     = input(57, 0)
+z(v7, height: 0.152, name: "V7", like: "57/0")
+m8     = input(60, 0)
+z(m8, height: 0.076, name: "M8", like: "60/0")
+v8     = input(62, 0)
+z(v8, height: 0.152, name: "V8", like: "62/0")
+m9     = input(65, 0)
+z(m9, height: 0.076, name: "M9", like: "65/0")
+v9     = input(67, 0)
+z(v9, height: 0.152, name: "V9", like: "67/0")
+m10    = input(70, 0)
+z(m10, height: 0.112, name: "M10", like: "70/0")
+v10    = input(72, 0)
+z(v10, height: 0.224, name: "V10", like: "72/0")
+m11    = input(75, 0)
+z(m11, height: 0.112, name: "M11", like: "75/0")
+v11    = input(77, 0)
+z(v11, height: 0.224, name: "V11", like: "77/0")
+m12    = input(80, 0)
+z(m12, height: 0.112, name: "M12", like: "80/0")
+v12    = input(82, 0)
+z(v12, height: 0.224, name: "V12", like: "82/0")
+m13    = input(85, 0)
+z(m13, height: 0.112, name: "M13", like: "85/0")
+v13    = input(87, 0)
+z(v13, height: 0.224, name: "V13", like: "87/0")
+rdl    = input(90, 0)
+z(rdl, height: 0.5, name: "RDL", like: "90/0")
+
+</text>
+</klayout-macro>
