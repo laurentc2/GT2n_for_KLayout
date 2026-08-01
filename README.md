@@ -11,7 +11,7 @@ The GT2n process is also a platform of the OpenROAD-flow-scripts
  * drc/GT2n.lydrc : DRC script  
  * lvs/GT2n.lylvs : LVS script  
  * d25/GT2n.lylvs : D25 script
- * GDS_example/gt2_6t_std_cells_w13_svt.gds : GDS layout of a std cell library example
+ * gds/gt2_6t_std_cells_w13_svt.gds : GDS layout of a std cell library example
 
 To install it, copy the file **GT2n.lyp**, **GT2n.lyt** and the 3 directories **drc** , **lvs** and **d25** of that repository in your directory :  
 `$HOME/.klayout/tech/GT2n  (under Linux)`  
