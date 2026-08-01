@@ -19,5 +19,6 @@ To install it, copy the file **GT2n.lyp**, **GT2n.lyt** and the 3 directories **
 
 Within KLayout, you can then access the technology **GT2n** by the menu : **[Tools]-[Manage Technologies]** 
 
-A 2.5D view of the cell **gt2_6t_nand2_x1_w13_svt**
+A 2.5D view of the cell **gt2_6t_nand2_x1_w13_svt** :
+
 ![Markdown Logo](gt2_6t_nand2_x1_w13_svt.png)
